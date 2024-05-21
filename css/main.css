@@ -18,6 +18,14 @@
     box-sizing: border-box;
     font-family: lora;
 }
+
+
+/* css header*/
+
+
+
+
+
 body{
     background-image: url(../img/8f27f9bc-5e7a-448c-8279-d569e341d591.jpg);
     background-size: cover;
@@ -34,10 +42,6 @@ main{
 header{
     background-color:#685634cc;
 }
-header h1{
-    margin:10px;
-    
-}
 header div{
     display: flex ;
     flex-direction: column;
@@ -49,50 +53,19 @@ header div{
     display: flex;
     justify-content: center;
 }
-.container-nav{
-    list-style: none;
-    color: black;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-    padding-bottom: 40px;
-    
 
-
-}
-header nav ul li a{
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    gap: auto;
-    
-
-}
-header nav ul {
-    width: 100%;
-    padding: 20px;
-    flex-wrap: wrap;
-    
+.navbar-toggler:hover{
+    background-color: #e1bb80cc;
     
 }
 
-.boton-menu{
-    width: 100%;
-    text-align: center;
-    margin-top: 40px;
-    border: solid black;
-}
-
-.boton-menu:hover{
-    background-color: #352208;
-}
 body main{
     background-color: #e1bb80cc;
+    padding-bottom: 10px;
 }
-
 .img-index {
     border: 2px solid black;
-    width: 60%;
+    width: 90%;
     height: auto;
 }
 
@@ -104,14 +77,29 @@ body main{
 .section1-index p {
    padding-top: 20px;
 }
-
+.video{
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid black;
+}
 
 
 
 /*actividades*/
 
 .section1-actividades p {
+    display: flex;
     padding-top: 40px;
+}
+
+.logo-actividades{
+    width: 30%;
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    
 }
 
 /*imagenes*/
@@ -133,11 +121,47 @@ body main{
   max-height: 100vh;
   border: solid 3px black;
 }
+
+.h1-formulario {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-formulario {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-formulario:hover {
+    background-color: #218838;
+}
+
 /*como llegar*/
 .mapa{
     height: 40%;
     width: 40%;
-    border: solid 3px black;
 }
 
 .marcador-mapa{
@@ -145,6 +169,19 @@ body main{
     height: auto;
 
 }
+.container-como-llegar{
+   
+}
+.foto-como-llegar{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+}
+
 
 .contenedor-mapa {
     display: flex;
@@ -161,6 +198,8 @@ body main{
             width: 40%;
             height: auto;
             border: 2px solid black;
+            margin-top: 20px;
+
         }
 .contenedor-img-contacto{
     display: flex;
@@ -191,11 +230,57 @@ body main{
 }
 
 
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #218838;
+}
 
 /*footer*/
 footer{
+    display: flex;
     background-color: #685634cc;
     color: black;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.logo-footer{
+    height: 14px;
+    width: auto;
+    padding-right: 5px;
+}
+.logop-footer{
+    height: 20px;
+    width: 20px;
+
 
 }
 
@@ -218,8 +303,6 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3,20%);
     gap: 10px;
-   
-
 }
 
 .grid-container-contacto{
@@ -233,4 +316,11 @@ main {
 
 
 }
+.logo-actividades {
+    width: 15%;
+    height: auto;
+
+}
+
+
 }
