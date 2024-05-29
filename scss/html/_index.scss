@@ -1,0 +1,30 @@
+/*index*/
+@import"../utilidades/extend.scss";
+
+.section1-index {
+        p {
+            padding-top: 20px;
+        }
+
+        .contenedor-img-index {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img-index {
+                @extend %border;
+                width: 75%;
+                height: auto;
+            }
+
+        }
+
+        .video {
+            display: block;
+            width: 40%;
+            height: auto;
+            margin: 0 auto;
+            @extend %border;
+
+        }
+    }

@@ -1,0 +1,64 @@
+/*imagenes*/
+@import"../utilidades/extend.scss";
+
+
+
+
+.img-carrusel {
+    width: 100%;
+    height: 40%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-gap: 10px;
+
+    .grid-item {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100vh;
+        @extend %border;
+    }
+}
+
+
+
+.h1-formulario {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .button-formulario {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .button-formulario:hover {
+        background-color: #218838;
+    }
+}

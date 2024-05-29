@@ -1,0 +1,75 @@
+/*contacto*/
+@import"../utilidades/extend.scss";
+
+
+.img-contacto {
+    width: 40%;
+    height: auto;
+    margin-top: 20px;
+    @extend %border;
+
+}
+
+.contenedor-img-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.grid-container-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+    .grid-item-contacto {
+        text-align: center;
+
+        img {
+            width: 40%;
+            height: auto;
+        }
+
+        img:hover {
+            width: 50%;
+        }
+
+    }
+
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-buttonhover {
+    background-color: #218838;
+}
