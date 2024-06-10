@@ -1,0 +1,28 @@
+
+footer {
+    display: flex;
+    background-color: $color-de-fondo;
+    color: black;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    .logop-footer {
+        height: 20px;
+        width: 20px;
+
+
+    }
+
+    section {
+        a {
+            .logo-footer {
+                height: 14px;
+                width: auto;
+                padding-right: 5px;
+            }
+
+        }
+    }
+
+}
